@@ -1,0 +1,16 @@
+*.exe
+*.zip
+*.log
+*-test.txt
+alignment-check.txt
+animation-error.txt
+chat-window-bounds*.txt
+waiting-preview.png
+welcome-*.png
+motion-*.png
+assets/*.png
+assets/*.ico
+bin/
+obj/
+.vs/
+codex-path.txt

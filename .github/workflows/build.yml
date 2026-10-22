@@ -1,0 +1,22 @@
+name: Build Windows launcher
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate original demo assets
+        shell: powershell
+        run: ./prepare-demo-assets.ps1
+      - name: Build launcher
+        shell: powershell
+        run: ./build-launcher.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CodexSeamlessLauncher-Windows
+          path: CodexSeamlessLauncher.exe
