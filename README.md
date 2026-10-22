@@ -1,4 +1,4 @@
-# Codex Seamless Launcher
+# 蕾塞的赴约 · Codex 启动器
 
 Windows 桌面启动动画与 Codex 聊天窗口的平滑交接。支持 150% 等系统缩放、真实可见边框对齐，以及淡出期间的移动和尺寸变化检测。
 
